@@ -20,7 +20,7 @@ const displayDetails = name => {
         .then(response => response.json())
         .then(data => {
             renderFoodInfo(data.meals[0]);
-            console.log(data.meals[0]);
+           // console.log(data.meals[0]);
         });
 };
 
