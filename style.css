@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.2s;
+  color: #e74c3c;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.form .input {
+  height: 48px;
+}
+
+.form .input input {
+  height: 100%;
+  background: transparent;
+  border: 0;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #000;
+}
+
+.form .input input.placeholder {
+  color: #222;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.form .input input:-moz-placeholder {
+  color: #222;
+  font-size: 16px;
+}
+
+.form .input input::-webkit-input-placeholder {
+  color: #222;
+  font-size: 16px;
+}
+.form .input input:hover,
+.form .input input:focus {
+  box-shadow: none;
+  outline: 0;
+}
+
+.form .input.input-wrap {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+}
+
+.form .input.button-wrap {
+  min-width: 130px;
+  fill: #777;
+}
+
+.form .input.button-wrap .btn-search {
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  font-size: 16px;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+
+  transition: all 0.2s ease-out, color 0.2s ease-out;
+  font-weight: 300;
+}
+
+.form .input.button-wrap .btn-search:hover {
+  background: #1867ce;
+}
+
+.form .input.button-wrap .btn-search:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+ul li {
+  padding: 5px 0;
+}
+
+footer {
+  padding: 50px 30px;
+  text-align: center;
+}
+
+#warning {
+  display: none;
+}
